@@ -1,6 +1,6 @@
 ### Screenshot
 
-![](./recipe-page-screenshot.png)
+![](./recipe-page.png)
 
 ### Built with
 
