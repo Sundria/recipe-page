@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-familiy-youngs-serif: "Young Serif", serif;
+    --font-familiy-outfit-serif: "Outfit", sans-serif;
+}
+
+body {
+    background-color: #f3e5d8;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid hsl(33, 7%, 74%);
+}
+
+.recipe-container {
+    max-width: 1440px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    gap: 40px;
+}
+
+header {
+    overflow: hidden;
+    padding: 60px 60px 0px 60px;
+}
+
+header img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.recipe-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.recipe-intro h1 {
+    font-family: var(--font-familiy-youngs-serif);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
+}
+
+.recipe-intro p {
+    font-family: var(--font-familiy-outfit-serif);
+    font-size: 1.3rem;
+    color: hsl(30, 10%, 34%);
+    line-height: 1.6;
+}
+
+.preparation-time {
+    background-color: #fff7fc;
+    font-family: var(--font-familiy-outfit-serif);
+    font-size: 1.125rem;
+    border-radius: 1rem;
+    padding: 30px;
+}
+
+.preparation-time h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: hsl(332, 51%, 32%);
+}
+
+.preparation-time ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 20px;
+}
+
+.preparation-time li::marker {
+    color: hsl(332, 51%, 32%);
+    font-size: 15px;
+}
+
+.preparation-time li {
+    padding-left: 20px;
+    color: hsl(30, 10%, 34%);
+}
+
+.preparation-time strong {
+
+    color: hsl(30, 10%, 34%);
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.ingredients h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: var(--font-familiy-youngs-serif);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.ingredients ul {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ingredients li::marker {
+    color: hsl(14, 45%, 36%);
+    font-size: 15px;
+}
+
+.ingredients li {
+    list-style-position: outside;
+    font-size: 1.2rem;
+    padding-left: 20px;
+    font-family: var(--font-familiy-outfit-serif);
+    color: hsl(30, 10%, 34%);
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.instructions h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: var(--font-familiy-youngs-serif);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.instructions ol {
+    padding: 0 2rem;
+}
+
+.instructions li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+.instructions li {
+    padding-left: 20px;
+    font-size: 1.2rem;
+    font-family: var(--font-familiy-outfit-serif);
+    color: hsl(30, 10%, 34%);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.nutrition h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: var(--font-familiy-youngs-serif);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.nutrition p {
+    font-size: 1.2rem;
+    font-family: var(--font-familiy-outfit-serif);
+    color: hsl(30, 10%, 34%);
+    line-height: 1.6;
+}
+
+.nutrition td {
+    text-align: left;
+    padding: 0.9rem;
+    border-bottom: 1px solid hsl(35, 13%, 82%);
+}
+
+.nutrition table {
+    font-family: var(--font-familiy-outfit-serif);
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition td:first-child {
+    padding-left: 40px;
+    color: hsl(33, 9%, 40%);
+    font-size: 1.18rem;
+    width: 50%;
+}
+
+.nutrition td:last-child {
+    font-size: 1.18rem;
+    color: hsl(14, 45%, 36%);
+    width: 50%;
+}
+
+.nutrition tr:last-child td {
+    border-bottom: none;
+}
+
+.attribution {
+    font-family: var(--font-familiy-outfit-serif);
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: rgb(122, 23, 122);
+}
